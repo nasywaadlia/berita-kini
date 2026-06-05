@@ -7,20 +7,23 @@ import RecommendationSection from "../components/RecommendationSection";
 import Footer from "../components/Footer";
 
 function Home() {
-  const [news, setNews] = useState([]);
-
+const [news, setNews] = useState([]);
+const [category, setCategory] = useState("nasional");
   useEffect(() => {
-    const fetchNews = async () => {
-      const data = await getNews();
-      setNews(data);
-    };
+  const fetchNews = async () => {
+    const data = await getNews(category);
+    setNews(data);
+  };
 
-    fetchNews();
-  }, []);
+  fetchNews();
+}, [category]);
 
   return (
    <>
-  <Navbar />
+<Navbar
+  category={category}
+  setCategory={setCategory}
+/>
   <HeroSection news={news[0]} />
   <PopularSection news={news} />
   <RecommendationSection news={news} />

@@ -1,15 +1,27 @@
-function Navbar() {
+function Navbar({ category, setCategory }) {  const categories = [
+    "nasional",
+    "internasional",
+    "ekonomi",
+    "olahraga",
+    "teknologi",
+    "hiburan",
+    "gaya-hidup",
+  ];
+
   return (
     <nav>
       <h2>Berita Kini</h2>
 
       <ul>
-        <li>Beranda</li>
-        <li>Nasional</li>
-        <li>Internasional</li>
-        <li>Ekonomi</li>
-        <li>Olahraga</li>
-        <li>Teknologi</li>
+        {categories.map((item) => (
+         <li
+  key={item}
+  className={category === item ? "active" : ""}
+  onClick={() => setCategory(item)}
+>
+  {item}
+</li>
+        ))}
       </ul>
     </nav>
   );
