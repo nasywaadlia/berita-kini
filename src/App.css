@@ -48,21 +48,14 @@ nav li:hover {
 }
 
 .hero-content h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 32px;
+   line-height: 1.3;
+  margin-bottom: 16px;
 }
 
 .hero-content p {
   margin-bottom: 20px;
   color: #666;
-}
-
-.hero-content button {
-  padding: 10px 20px;
-  border: none;
-  background: #007bff;
-  color: white;
-  cursor: pointer;
 }
 
 .hero-image {
@@ -85,11 +78,11 @@ nav li:hover {
 
 .popular-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 .news-card {
-  border-radius: 12px;
+    border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -98,19 +91,20 @@ nav li:hover {
 }
 
 .news-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
-
-.news-card img {
+.news-card img{
   width: 100%;
-  height: 150px;
+  height: 180px;
   object-fit: cover;
+  display: block;
 }
 
 .news-card h4 {
-  min-height: 70px;
-  padding: 10px;
+   padding: 10px;
+  margin-bottom: 8px;
+  line-height: 1.4;
 }
 
 .news-card p {
@@ -391,6 +385,166 @@ footer hr {
 
 .comment-item h4 {
   margin-bottom: 8px;
+}
+
+.hero-tag {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+.hero-date {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 15px;
+}
+
+.hero-link {
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero-link:hover {
+  text-decoration: underline;
+}
+
+.recommendation-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.recommendation-header input{
+  width:220px;
+  padding:10px;
+}
+
+.banner {
+  max-width: 1200px;
+
+  margin: 60px auto;
+
+  background: #14c8a8;
+
+  border-radius: 20px;
+
+  padding: 50px;
+
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner h2 {
+  font-size: 42px;
+  line-height: 1.2;
+
+  margin-bottom: 20px;
+}
+
+.banner-images {
+  display: flex;
+  gap: 15px;
+}
+
+.banner-images img {
+  width: 140px;
+  height: 100px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 10px;
+  margin-top: 40px;
+}
+.pagination button {
+  width: 36px;
+  height: 36px;
+
+  border: 1px solid #ddd;
+  border-radius: 6px;
+
+  background: white;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background: #f3f4f6;
+}
+
+.pagination .active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.page-btn {
+  width: auto !important;
+  padding: 0 14px;
+}
+
+.pagination span {
+  color: #64748b;
+}
+
+.card-meta {
+  padding: 0 12px 12px;
+
+  display: flex;
+  gap: 6px;
+
+  font-size: 12px;
+}
+
+.category {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.result-info {
+  margin-top: 40px;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+.popular-item {
+  position: relative;
+}
+
+.popular-rank {
+  position: absolute;
+
+  top: -8px;
+  left: -8px;
+
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+
+  background: #0f172a;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  z-index: 10;
 }
 
 @media (max-width: 768px) {

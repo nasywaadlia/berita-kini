@@ -6,18 +6,28 @@ function HeroSection({ news }) {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>{news.title}</h1>
+         <p className="hero-tag">
+    Headline
+  </p>
 
-        <p>{news.contentSnippet}</p>
+  <h1>{news.title}</h1>
 
-        <a
-          href={news.link}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button>Baca Selengkapnya</button>
-        </a>
-      </div>
+  <p>{news.contentSnippet}</p>
+
+  <p className="hero-date">
+    {news.isoDate.slice(0, 10)}
+  </p>
+
+  <a
+    href={news.link}
+    target="_blank"
+    rel="noreferrer"
+    className="hero-link"
+  >
+    Baca Selengkapnya →
+  </a>
+
+</div>
 
       <div className="hero-image">
         <img

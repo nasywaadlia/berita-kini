@@ -21,7 +21,15 @@ function NewsCard({ news, allNews }) {
 
         <h4>{news.title}</h4>
 
-        <p>{news.isoDate.slice(0, 10)}</p>
+<div className="card-meta">
+  <span className="category">
+    Nasional
+  </span>
+
+  <span>
+    • {news.isoDate.slice(0,10)}
+  </span>
+</div>
       </div>
     </Link>
   );
