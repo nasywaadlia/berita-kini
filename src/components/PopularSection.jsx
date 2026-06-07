@@ -10,6 +10,7 @@ function PopularSection({ news }) {
           <NewsCard
             key={index}
             news={item}
+            allNews={news}
           />
         ))}
       </div>

@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 
-function NewsCard({ news }) {
+function NewsCard({ news, allNews }) {
   return (
     <Link
       to="/news"
-      state={{ news }}
+      state={{
+        news,
+        allNews
+      }}
       style={{
         textDecoration: "none",
-        color: "inherit",
+        color: "inherit"
       }}
     >
       <div className="news-card">
@@ -16,13 +19,9 @@ function NewsCard({ news }) {
           alt={news.title}
         />
 
-      <h4>{news.title}</h4>
+        <h4>{news.title}</h4>
 
-<p className="snippet">
-  {news.contentSnippet}
-</p>
-
-<p>{news.isoDate.slice(0, 10)}</p>
+        <p>{news.isoDate.slice(0, 10)}</p>
       </div>
     </Link>
   );
