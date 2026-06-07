@@ -1,60 +1,75 @@
+import {
+  FaYoutube,
+  FaInstagram,
+  FaFacebookF
+} from "react-icons/fa";
+
 function Footer() {
   return (
     <footer>
       <div className="footer-grid">
 
         <div className="footer-brand">
-          <h3>Berita Kini</h3>
 
-          <p>
-            Portal berita terpercaya yang menyajikan
-            informasi terkini dari Indonesia dan dunia.
+          <div className="brand-header">
+            <div className="brand-logo"></div>
+            <h3>Berita Kini</h3>
+          </div>
+
+          <p className="copyright-text">
+            © 2026 Berita Kini. All Rights Reserved.
           </p>
+
+          <div className="social-section">
+            <h4>Ikuti Kami</h4>
+
+            <div className="social-icons">
+              <FaYoutube />
+  <FaInstagram />
+  <FaFacebookF />
+            </div>
+          </div>
+
         </div>
 
         <div>
-          <h4>Kategori</h4>
+          <h4>Telusuri</h4>
 
           <ul>
+            <li>Beranda</li>
+            <li>Kesehatan</li>
+            <li>Otomotif</li>
+            <li>Politik</li>
+            <li>Olahraga</li>
             <li>Nasional</li>
             <li>Internasional</li>
-            <li>Ekonomi</li>
-            <li>Olahraga</li>
-            <li>Teknologi</li>
           </ul>
         </div>
 
         <div>
-          <h4>Informasi</h4>
+          <h4>Bantuan</h4>
 
           <ul>
-            <li>Tentang Kami</li>
-            <li>Kontak</li>
-            <li>Kebijakan Privasi</li>
-            <li>Syarat & Ketentuan</li>
+            <li>Kontak Kami</li>
+            <li>Laporan Pembajakan</li>
+            <li>Kebijakan</li>
           </ul>
         </div>
 
         <div>
-          <h4>Cari Berita</h4>
+          <h4>Berlangganan Berita Terbaru</h4>
 
-          <div className="footer-search">
+          <div className="footer-subscribe">
             <input
-              type="text"
-              placeholder="Cari berita..."
+              type="email"
+              placeholder="Masukan email"
             />
 
-            <button>Cari</button>
+            <button>➤</button>
           </div>
         </div>
 
       </div>
-
-      <hr />
-
-      <p className="copyright">
-        © 2026 Berita Kini. All Rights Reserved.
-      </p>
     </footer>
   );
 }
