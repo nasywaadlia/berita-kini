@@ -1,27 +1,15 @@
 # Berita Kini
 
-> 🚧 **Work In Progress (WIP)**
->
-> This project is currently under active development. Some features are incomplete and may change during development.
+A modern and responsive news website built with React and Vite, designed to deliver the latest news through a clean, fast, and user-friendly interface.
 
-## About
+## Features
 
-Berita Kini is a modern news website built using React and Vite. The project aims to provide users with a clean, responsive, and user-friendly platform for reading the latest news.
-
-## Current Features
-
-* ✅ Responsive Home Page
-* ✅ News Section Layout
-* ✅ Modern User Interface
-* ✅ React + Vite Setup
-
-## Upcoming Features
-
-* ⏳ News Detail Page
-* ⏳ Footer Improvements
-* ⏳ Active Scroll Navigation
-* ⏳ Additional UI Enhancements
-* ⏳ Performance Optimization
+* 📰 Latest news display
+* 📄 News detail page
+* 📱 Fully responsive design
+* 🧭 Active navigation highlighting on scroll
+* ⚡ Fast performance with Vite
+* 🎨 Modern and clean user interface
 
 ## Tech Stack
 
@@ -30,23 +18,34 @@ Berita Kini is a modern news website built using React and Vite. The project aim
 * JavaScript
 * CSS
 
-## Installation
+## Getting Started
+
+### Clone the Repository
 
 ```bash
 git clone <repository-url>
 cd berita-kini
+```
+
+### Install Dependencies
+
+```bash
 npm install
+```
+
+### Run Development Server
+
+```bash
 npm run dev
 ```
 
-## Development Status
+## Purpose
 
-This project is currently under development and is not yet ready for production use.
+This project was created to practice modern frontend development using React and Vite while implementing responsive layouts, reusable components, and interactive user experiences.
 
 ## License
 
-This project is created for learning and development purposes.
-
+This project is available for educational and portfolio purposes.
 
 # React + Vite
 
