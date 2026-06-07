@@ -16,13 +16,13 @@ function Navbar({ category, setCategory }) {
   }, []);
 
   const categories = [
-    "nasional",
-    "internasional",
-    "ekonomi",
-    "olahraga",
-    "teknologi",
-    "hiburan",
-    "gaya-hidup",
+    "Beranda",
+    "Kesehatan",
+    "Otomotif",
+    "Politik",
+    "Olahraga",
+    "Nasional",
+    "Internasional",
   ];
 
   return (
