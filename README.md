@@ -1,3 +1,5 @@
+https://berita-kini-alpha.vercel.app/
+
 # Berita Kini
 
 A modern and responsive news website built with React and Vite, designed to deliver the latest news through a clean, fast, and user-friendly interface.
