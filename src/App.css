@@ -70,6 +70,31 @@ nav li:hover {
   border-radius: 10px;
   object-fit: cover;
 }
+
+.hero-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+  margin-top: 20px;
+  margin-bottom: 60px;
+
+  color: #64748b;
+  font-size: 14px;
+}
+
+.hero-pagination span:first-child,
+.hero-pagination span:last-child {
+  cursor: pointer;
+}
+
+.hero-pagination span:nth-child(2) {
+  color: #111827;
+  font-weight: 600;
+}
+
 .popular {
   max-width: 1200px;
   margin: 60px auto;
@@ -82,7 +107,7 @@ nav li:hover {
 .popular-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 30px;
 }
 .news-card {
     border-radius: 12px;
@@ -597,17 +622,36 @@ footer hr {
 }
 
 .popular-item {
+  display: flex;
+  gap: 12px;
   position: relative;
 }
+.popular-item img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
+.popular-content h4 {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.popular-meta {
+  display: flex;
+  gap: 6px;
+  font-size: 12px;
+}
 .popular-rank {
   position: absolute;
 
-  top: -8px;
-  left: -8px;
+  top: -10px;
+  left: -10px;
 
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
 
   border-radius: 50%;
 
@@ -618,10 +662,7 @@ footer hr {
   align-items: center;
   justify-content: center;
 
-  font-size: 12px;
   font-weight: 700;
-
-  z-index: 10;
 }
 
 @media (max-width: 768px) {
